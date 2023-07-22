@@ -1,0 +1,53 @@
+{
+  "metadata-viewer": {
+    "title": "View Metadata",
+    "description": "The metadata will be displayed in JSON format, where piece hash values are not displayed by default.",
+    "open-torrent": "Open Torrent File",
+    "drag-torrent": "Drag Torrent File Here",
+    "show-piece-hash": "Show Piece Hash",
+    "hide-piece-hash": "Hide Piece Hash",
+    "reselect-file": "Reselect File",
+    "clear": "Clear",
+    "decoding": "Decoding",
+    "torrent-notfound": "Torrent File Not Found",
+    "unsupported-file-type": "Unsupported File Type"
+  },
+  "torrent-generator": {
+    "title": "Generate Torrent",
+    "description": "By selecting files or directories to share, you can easily create a torrent file containing metadata.",
+    "file-path": "File Path",
+    "file-path-placeholder": "Please select files or directories to share",
+    "piece-size": "Piece Size",
+    "auto": "Auto",
+    "tracker-url": "Tracker URL",
+    "tracker-url-placeholder": "Enter multiple URLs with line breaks",
+    "weebseeds-url": "Webseed URL",
+    "weebseeds-url-placeholder": "Optional, enter multiple URLs with line breaks",
+    "comment": "Comment",
+    "comment-placeholder": "Optional, up to 128 characters",
+    "source": "Source",
+    "source-placeholder": "Optional, up to 128 characters",
+    "piece-alignment": "Piece Alignment",
+    "piece-alignment-desc": "Check to avoid splitting two files into the same piece",
+    "private-torrent": "Private Torrent",
+    "private-torrent-desc": "Check and the torrent will not be distributed on the DHT network",
+    "generate-torrent": "Generate Torrent",
+    "url-illegal": "URL is invalid, please ensure it starts with http:// or https://",
+    "choose-file": "Choose File",
+    "choose-folder": "Choose Folder",
+    "file-path-empty": "File path is empty",
+    "unspport-munual-input": "Manual input is not supported",
+    "must-ended-with-torrent": "File name must end with .torrent",
+    "torrent-generate": "Generate Torrent",
+    "torrent-generating": "Generating Torrent",
+    "torrent-generate-success": "Torrent Generated Successfully",
+    "torrent-generate-fail": "Torrent Generation Failed"
+  },
+  "about": {
+    "title": "About Tor",
+    "description": "A BitTorrent utility.",
+    "intro": "A BitTorrent utility that can view BitTorrent metadata and generate BitTorrent files.",
+    "repo": "Github Repo",
+    "author": "Author"
+  }
+}

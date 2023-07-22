@@ -1,0 +1,53 @@
+{
+    "metadata-viewer": {
+        "title": "查看元数据",
+        "description": "元数据会以 JSON 格式进行展现,其中默认不包含分块哈希值的显示。",
+        "open-torrent": "打开种子文件",
+        "drag-torrent": "拖拽种子文件到此处",
+        "show-piece-hash": "显示分块哈希值",
+        "hide-piece-hash": "隐藏分块哈希值",
+        "reselect-file": "重新选择文件",
+        "clear": "清除",
+        "decoding": "正在解析",
+        "torrent-notfound": "种子文件未找到",
+        "unsupported-file-type": "不支持的文件类型"
+    },
+    "torrent-generator": {
+        "title": "生成种子",
+        "description": "通过选择要共享的文件或目录,你可以轻松地创建一个包含元数据的种子文件。",
+        "file-path": "文件路径",
+        "file-path-placeholder": "请选择要共享的文件或目录",
+        "piece-size": "分块大小",
+        "auto": "自动",
+        "tracker-url": "Tracker URL",
+        "tracker-url-placeholder": "多个URL请换行输入",
+        "weebseeds-url": "Web种子 URL",
+        "weebseeds-url-placeholder": "可选,多个URL请换行输入",
+        "comment": "注释",
+        "comment-placeholder": "可选,最多128个字符",
+        "source": "来源",
+        "source-placeholder": "可选,最多128个字符",
+        "piece-alignment": "分块对齐",
+        "piece-alignment-desc": "勾选后,可以避免两个文件被分割在同一个分块",
+        "private-torrent": "私有种子",
+        "private-torrent-desc": "勾选后,种子不会在DHT网络分发",
+        "generate-torrent": "制作种子",
+        "url-illegal": "URL不合法,请确保是以 http:// 或 https:// 开头",
+        "choose-file": "选择文件",
+        "choose-folder": "选择文件夹",
+        "file-path-empty": "文件路径为空",
+        "unspport-munual-input": "不支持手动输入",
+        "must-ended-with-torrent": "文件名必须以 .torrent 结尾",
+        "torrent-generate": "制作种子",
+        "torrent-generating": "正在生成种子",
+        "torrent-generate-success": "种子生成成功",
+        "torrent-generate-fail": "种子生成失败"
+    },
+    "about": {
+        "title": "关于Tor",
+        "description": "Bittorrent工具",
+        "intro": "一个Bittorrent工具,可查看BitTorrent元数据和生成BitTorrent文件。",
+        "repo": "Github仓库",
+        "author": "作者"
+    }
+}
