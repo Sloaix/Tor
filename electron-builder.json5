@@ -5,12 +5,12 @@
   appId: 'com.sloaix.tor',
   asar: true,
   directories: {
-    output: 'release/${version}'
+    output: 'release/v${version}'
   },
   files: ['dist-electron', 'dist'],
   mac: {
-    artifactName: '${productName}_${version}.${ext}',
-    target: ['dmg', 'zip']
+    artifactName: '${productName}-${arch}-v${version}.${ext}',
+    target: ['dmg']
   },
   win: {
     target: [
@@ -19,17 +19,20 @@
         arch: ['x64']
       }
     ],
-    artifactName: '${productName}_${version}.${ext}'
+    artifactName: '${productName}-${arch}-v${version}.${ext}'
   },
   nsis: {
     oneClick: false,
     perMachine: false,
     allowToChangeInstallationDirectory: true,
-    deleteAppDataOnUninstall: false
+    deleteAppDataOnUninstall: true
   },
   publish: {
-    provider: 'generic',
-    channel: 'latest',
-    url: 'https://github.com/sloaix/tor/releases/download/v${version}'
+    provider: 'github',
+    repo: 'tor',
+    owner: 'Sloaix',
+    releaseType: 'release',
+    vPrefixedTagName: true,
+    publishAutoUpdate: true
   }
 }
