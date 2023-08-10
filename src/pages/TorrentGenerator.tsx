@@ -310,6 +310,7 @@ export default () => {
         />
       </FormItem>
 
+      {/* TODO 忽略隐藏文件  */}
       {/* TODO 分块对齐 */}
       {/* <FormItem >
         <Tooltip content={t('page.torrent-generator.piece-alignment-desc')} position="right">

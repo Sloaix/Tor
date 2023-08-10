@@ -217,6 +217,13 @@ ipcMain.handle('get-desktop-path', async () => {
 })
 
 /**
+ * 返回系统平台
+ * @returns 'darwin' | 'linux'| 'win32'
+ */
+ipcMain.handle('get-platform', async () => {
+  return process.platform
+})
+/**
  * 返回Locale
  */
 ipcMain.handle('get-system-locale', async () => {
