@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 580 580">
-    <circle cx="290" cy="290" r="270" stroke="#000" stroke-width="40" />
+    <circle cx="290" cy="290" r="270" stroke="#000" strokeWidth-="40" />
     <path
         stroke="#000"
-        stroke-width="40"
+        strokeWidth="40"
         d="M40 195h500m-281 5v340m202-346-15.724 4.88C348.269 228.983 276.318 310.917 259 411"
     />
 </svg>

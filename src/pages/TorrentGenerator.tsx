@@ -86,15 +86,15 @@ const useStore = create<Store>()((set) => ({
   isPrivate: false, // 默认公开种子
   alignPiece: true, // 默认分块对齐
   processing: false, // 默认不在生成中
-  setEntry: (entry, isDir) => set((prev) => ({ ...prev, entry, isDir })),
-  setComment: (comment) => set((prev) => ({ ...prev, comment })),
-  setSource: (source) => set((prev) => ({ ...prev, source })),
-  setWebSeeds: (webSeeds) => set((prev) => ({ ...prev, webSeeds })),
-  setTrackers: (trackers) => set((prev) => ({ ...prev, trackers })),
-  setIsPrivate: (isPrivate) => set((prev) => ({ ...prev, isPrivate })),
-  setPieceSize: (pieceSize) => set((prev) => ({ ...prev, pieceSize })),
-  setAlignPiece: (alignPiece) => set((prev) => ({ ...prev, alignPiece })),
-  setProcessing: (processing) => set((prev) => ({ ...prev, processing }))
+  setEntry: (entry, isDir) => set(() => ({ entry, isDir })),
+  setComment: (comment) => set(() => ({ comment })),
+  setSource: (source) => set(() => ({ source })),
+  setWebSeeds: (webSeeds) => set(() => ({ webSeeds })),
+  setTrackers: (trackers) => set(() => ({ trackers })),
+  setIsPrivate: (isPrivate) => set(() => ({ isPrivate })),
+  setPieceSize: (pieceSize) => set(() => ({ pieceSize })),
+  setAlignPiece: (alignPiece) => set(() => ({ alignPiece })),
+  setProcessing: (processing) => set(() => ({ processing }))
 }))
 
 const MESSAGE_ID = 'TorrentGenerator'
@@ -318,9 +318,9 @@ export default () => {
             disabled={processing}
             checked={alignPiece}
             onChange={(checked) => {
-              setState((prev) => {
+              setState(() => {
                 return {
-                  ...prev,
+                  ...,
                   alignPiece: checked
                 }
               })

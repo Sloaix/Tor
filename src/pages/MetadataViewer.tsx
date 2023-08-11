@@ -22,10 +22,10 @@ type Store = {
 const useStore = create<Store>()((set) => ({
   hidePieces: true,
   dragIn: false,
-  setTorrent: (torrent) => set((prev) => ({ ...prev, torrent })),
-  setLoading: (loading) => set((prev) => ({ ...prev, loading })),
-  setHidePieces: (hidePieces) => set((prev) => ({ ...prev, hidePieces })),
-  setDragIn: (dragIn) => set((prev) => ({ ...prev, dragIn }))
+  setTorrent: (torrent) => set(() => ({ torrent })),
+  setLoading: (loading) => set(() => ({ loading })),
+  setHidePieces: (hidePieces) => set(() => ({ hidePieces })),
+  setDragIn: (dragIn) => set(() => ({ dragIn }))
 }))
 
 export default () => {
